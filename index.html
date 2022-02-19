@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Platte Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <form action="#" method="get">
+      <input type="color" value="#f55a5a">
+      <select name="modes" id="mode-picker">
+        <option value="monochrome">monochrome</option>
+        <option value="monochrome-dark">monochrome-dark</option>
+        <option value="monochrome-light">monochrome-light</option>
+        <option value="analogic">analogic</option>
+        <option value="complement">complement</option>
+        <option value="analogic-complement">analogic-complement</option>
+        <option value="triad">triad</option>
+        <option value="quad">quad</option>
+      </select>
+      <button type="submit" id="submit-button">Get color scheme</button>
+    </form>
+    <div class="color-palette">
+      <div class="color" id="color-1"></div>
+      <div class="color" id="color-2"></div>
+      <div class="color" id="color-3"></div>
+      <div class="color" id="color-4"></div>
+      <div class="color" id="color-5"></div>
+    </div>
+    <div class="color-labels">
+      <input type="text" class="label" id="label-1" value="#F55A5A">
+      <input type="text" class="label" id="label-1" value="#2B283A">
+      <input type="text" class="label" id="label-1" value="#FBF3AB">
+      <input type="text" class="label" id="label-1" value="#AAD1B6">
+      <input type="text" class="label" id="label-1" value="#A626D3">
+    </div>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
