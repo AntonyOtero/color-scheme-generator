@@ -39,16 +39,20 @@ submitButton.addEventListener("click", (e) => {
   fetch(`https://www.thecolorapi.com/scheme?hex=${seedHex}&mode=${mode}&count=${count}`)
   .then(response => response.json())
   .then(data => {
-    console.log(data);
+    // Color One
     colorOne.style.backgroundColor = data.colors[0].hex.value;
     labelOne.value = data.colors[0].name.closest_named_hex;
+    // Color Two
     colorTwo.style.backgroundColor = data.colors[1].hex.value;
-    labelTwo.textContent = data.colors[1].name.closest_named_hex;
+    labelTwo.value = data.colors[1].name.closest_named_hex;
+    // Color Three
     colorThree.style.backgroundColor = data.colors[2].hex.value;
-    labelThree.textContent = data.colors[2].name.closest_named_hex;
+    labelThree.value = data.colors[2].name.closest_named_hex;
+    // Color Four
     colorFour.style.backgroundColor = data.colors[3].hex.value;
-    labelFour.textContent = data.colors[3].name.closest_named_hex;
+    labelFour.value = data.colors[3].name.closest_named_hex;
+    // Color Five
     colorFive.style.backgroundColor = data.colors[4].hex.value;
-    labelFive.textContent = data.colors[4].name.closest_named_hex;
+    labelFive.value = data.colors[4].name.closest_named_hex;
   })
 })
